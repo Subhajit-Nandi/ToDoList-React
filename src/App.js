@@ -57,16 +57,16 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/ToDoList-React'>
         <Header title="LIST" searchBar={true} />
         <Routes>
-          <Route path="/" element={
+          <Route element={
               <>
                 <AddTodo addTodo={addTodo} />
                 <Todos todos={todos} onDelete={onDelete} />
               </>
-            }> </Route>
-          <Route path="/about" element={<About />} />
+            } path="/"> </Route>
+          <Route element={<About />} path="/about" />
         </Routes>
         <Footer />
       </BrowserRouter>

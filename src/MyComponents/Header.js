@@ -11,7 +11,7 @@ export default function Header(props) {
   return (
       <Navbar expand="lg" className="bg-body-tertiary">
           <Container fluid>
-              <Navbar.Brand href="/">{props.title}</Navbar.Brand>
+              <Navbar.Brand href="/ToDoList-React">{props.title}</Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                   <Nav
@@ -19,8 +19,8 @@ export default function Header(props) {
                       style={{ maxHeight: '100px' }}
                       navbarScroll
                   >
-                      <Nav.Link href="/">Home</Nav.Link>
-                      <Nav.Link href="/about">About</Nav.Link>
+                      <Nav.Link href="/ToDoList-React/">Home</Nav.Link>
+                      <Nav.Link href="/ToDoList-React/about">About</Nav.Link>
                   </Nav>
                   {props.searchBar? <Form className="d-flex">
                       <Form.Control
